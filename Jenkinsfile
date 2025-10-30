@@ -52,8 +52,8 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){
                        sh "docker build -t chatbot ."
-                       sh "docker tag chatbot vijay3639/chatbot:latest "
-                       sh "docker push vijay3639/chatbot:latest "
+                       sh "docker tag chatbot vicky90/chatbot:latest "
+                       sh "docker push vicky90/chatbot:latest "
                     }
                 }
             }
